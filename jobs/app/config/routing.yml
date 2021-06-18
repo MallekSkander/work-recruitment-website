@@ -1,0 +1,38 @@
+qcm:
+    resource: "@QCMBundle/Resources/config/routing.yml"
+    prefix:   /
+
+offre:
+    resource: "@OffreBundle/Resources/config/routing.yml"
+    prefix:   /api/offre
+rendez_vous:
+    resource: "@RendezVousBundle/Resources/config/routing.yml"
+    prefix:   /
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+api_login_check:
+    path: /api/login_check
+    methods:  [POST]
+
+register:
+    path: /register
+    controller: AppBundle\Security\AuthController::register
+api:
+    path: /api
+    controller: AppBundle\Security\AuthController::api
+api_get_u:
+    path: /api/user
+    controller: AppBundle\Security\AuthController::getCurrentUserAction
+
+api_get_u_id:
+    path: /api/user/{id}
+    controller: AppBundle\Security\AuthController::getUserAction
+
+api_get_us:
+    path: /api/user/getAll
+    controller: AppBundle\Security\AuthController::geUsersAction

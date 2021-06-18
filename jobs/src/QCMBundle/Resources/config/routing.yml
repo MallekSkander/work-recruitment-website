@@ -1,0 +1,47 @@
+qcm_homepage:
+    path:     /
+    defaults: { _controller: QCMBundle:Default:index }
+addQCM:
+    path:     /addQCM
+    defaults: { _controller: QCMBundle:Qcm:addQCM}
+    methods:  [GET, POST]
+remQCM:
+    path:     /remQCM
+    defaults: { _controller: QCMBundle:Qcm:remQCM}
+    methods:  [GET, POST]
+
+updateQCM:
+    path:     /updateQCM
+    defaults: { _controller: QCMBundle:Qcm:updateQCM}
+    methods:  [GET, POST]
+getallQCM:
+    path:     /getallQCM
+    defaults: { _controller: QCMBundle:Qcm:getallQCM}
+    methods:  [GET, POST]
+getQCMbyid:
+    path:     /getQCM/{id}
+    defaults: { _controller: QCMBundle:Qcm:getQCMById}
+    methods:  [GET, POST]
+getAllquestion:
+    path:     /getallquestion
+    defaults: { _controller: QCMBundle:Qcm:getallquestion}
+    methods:  [GET, POST]
+
+getallquestionByOffre:
+    path:     /getallquestion/{id}
+    defaults: { _controller: QCMBundle:Qcm:getallquestionByOffre}
+    methods:  [GET, POST]
+
+remQuestion:
+    path:     /remQuestion
+    defaults: { _controller: QCMBundle:Qcm:remQuestion}
+    methods:  [GET, POST]
+
+addquestion:
+    path:     /addquestion
+    defaults: { _controller: QCMBundle:Qcm:addquestionAndAnswer}
+    methods:  [GET, POST]
+updatequestionAndAnswer:
+    path:     /updatequestionAndAnswer
+    defaults: { _controller: QCMBundle:Qcm:updatequestionAndAnswer}
+    methods:  [GET, POST]

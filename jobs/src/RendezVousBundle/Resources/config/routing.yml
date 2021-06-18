@@ -1,0 +1,63 @@
+rendez_vous_homepage:
+    path:     /
+    defaults: { _controller: RendezVousBundle:Default:index }
+addRendezVous:
+    path:     /addrdv
+    defaults: { _controller: RendezVousBundle:RendezVous:addrdv}
+    methods:  [POST]
+remRendezVous:
+    path:     /remrdv
+    defaults: { _controller: RendezVousBundle:RendezVous:remrdv}
+    methods:  [GET, POST]
+updateRendezVous:
+    path:     /updaterdv
+    defaults: { _controller: RendezVousBundle:RendezVous:updaterdv}
+    methods:  [GET, POST]
+
+
+addCategory:
+    path:     /addcategory
+    defaults: { _controller: RendezVousBundle:RendezVous:addcategory}
+    methods:  [GET, POST]
+remcategory:
+    path:     /remcategory
+    defaults: { _controller: RendezVousBundle:RendezVous:remcategory}
+    methods:  [GET, POST]
+updatecategory:
+    path:     /updatecategory
+    defaults: { _controller: RendezVousBundle:RendezVous:updatecategory}
+    methods:  [GET, POST]
+
+gettallrdv:
+    path:     /allrdv
+    defaults: { _controller: RendezVousBundle:RendezVous:getallRdv}
+    methods:  [GET, POST]
+getrdvbyid:
+    path:     /getallrdv/{id}
+    defaults: { _controller: RendezVousBundle:RendezVous:getRdvById}
+    methods:  [GET, POST]
+
+addSession:
+    path:     /addSession
+    defaults: { _controller: RendezVousBundle:RendezVous:addSession}
+    methods:  [GET, POST]
+
+
+getallSession:
+    path:     /getallSession
+    defaults: { _controller: RendezVousBundle:RendezVous:getallSession}
+    methods:  [GET, POST]
+
+
+
+
+
+
+
+
+routingcategory:
+    resource: "@RendezVousBundle/Resources/config/routing/category.yml"
+    prefix:   /category
+routingappointment:
+    resource: "@RendezVousBundle/Resources/config/routing/appointment.yml"
+    prefix:   /appointment

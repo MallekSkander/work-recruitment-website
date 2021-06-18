@@ -1,0 +1,16 @@
+offre_homepage:
+    path:     /add
+    defaults: { _controller: OffreBundle:Default:addOffre }
+offre_get_all:
+    path:     /get/all
+    defaults: { _controller: OffreBundle:Default:getAllOffre }
+offre_get_by_id:
+    path:     /get/{id}
+    defaults: { _controller: OffreBundle:Default:getOffreById }
+offre_delete_by_id:
+    path:     /delete/{id}
+    defaults: { _controller: OffreBundle:Default:removeOffre }
+offre_update:
+    path:     /update
+    defaults: { _controller: OffreBundle:Default:updateOffre }
+
